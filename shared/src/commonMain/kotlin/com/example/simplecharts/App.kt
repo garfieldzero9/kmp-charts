@@ -118,7 +118,11 @@ fun App() {
                         horizontalArrangement = Arrangement.SpaceBetween,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
-                        Column {
+                        Column(
+                            modifier = Modifier
+                                .weight(1f)
+                                .padding(end = 12.dp)
+                        ) {
                             Text(
                                 text = "SimpleCharts KMP",
                                 fontSize = 24.sp,
@@ -154,7 +158,9 @@ fun App() {
                                 text = "Live Metrics",
                                 fontSize = 10.sp,
                                 fontWeight = FontWeight.Medium,
-                                color = Color.White
+                                color = Color.White,
+                                maxLines = 1,
+                                softWrap = false
                             )
                         }
                     }
