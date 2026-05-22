@@ -39,6 +39,8 @@
             echo "Java version: $(java -version 2>&1 | head -n 1)"
             echo "Kotlin version: $(kotlin -version | cut -d ' ' -f 3-)"
             echo "Gradle version: $(gradle -v | grep '^Gradle' | cut -d ' ' -f 2)"
+            export PATH="$PATH:/usr/bin:/usr/sbin"
+            export DEVELOPER_DIR="/Applications/Xcode.app/Contents/Developer"
           '';
         };
       });
