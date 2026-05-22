@@ -63,7 +63,7 @@ fun BarChart(
 ) {
     val verticalLinesCount = remember(data) { data.maxX.toInt() + 1 }
     val horizontalLinesOffset =
-        GridDefaults.HORIZONTAL_LINES_OFFSET // TODO check why y-axis-labels get the other way around with large values for offset
+        GridDefaults.HORIZONTAL_LINES_OFFSET
 
     val animationPlayed = StartAnimation(animation, data)
 
